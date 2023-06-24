@@ -13,9 +13,10 @@
         android:text="Hello World!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.817" />
+        app:layout_constraintVertical_bias="0.806" />
 
     <ImageButton
         android:id="@+id/imageButton4"
@@ -27,7 +28,7 @@
         app:layout_constraintStart_toEndOf="@+id/imageButton3"
         app:layout_constraintTop_toBottomOf="@+id/imageButton2"
         app:layout_constraintVertical_bias="0.075"
-        app:srcCompat="@android:drawable/btn_star_big_on" />
+        app:srcCompat="@drawable/baseline_auto_graph_24" />
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -39,7 +40,7 @@
         app:layout_constraintStart_toEndOf="@+id/imageButton1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.165"
-        app:srcCompat="@android:drawable/ic_menu_myplaces" />
+        app:srcCompat="@drawable/baseline_cookie_24" />
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -50,7 +51,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton1"
         app:layout_constraintVertical_bias="0.077"
-        app:srcCompat="?attr/actionModeCutDrawable" />
+        app:srcCompat="@drawable/baseline_cruelty_free_24" />
 
     <ImageButton
         android:id="@+id/imageButton1"

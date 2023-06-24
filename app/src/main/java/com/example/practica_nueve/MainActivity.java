@@ -9,6 +9,12 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
+    int imagen1= R.drawable.ic_launcher_foreground;
+    int imagen2= R.drawable.baseline_cookie_24;
+    int imagen3= R.drawable.baseline_cruelty_free_24;
+    int imagen4= R.drawable.baseline_auto_graph_24;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,36 +33,37 @@ public class MainActivity extends AppCompatActivity {
         boton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                moveSecondActivity();
+                moveSecondActivity(imagen1);
 
             }
         });
         boton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                moveSecondActivity();
+                moveSecondActivity(imagen2);
 
             }
         });
         boton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                moveSecondActivity();
+                moveSecondActivity(imagen3);
 
             }
         });
         boton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                moveSecondActivity();
+                moveSecondActivity(imagen4);
 
             }
         });
 
     }
 
-    public void moveSecondActivity(){
+    public void moveSecondActivity(int imagen1){
         Intent intent= new Intent(MainActivity.this, SecondActivity.class);
+        intent.putExtra("clave", imagen1);
         startActivity(intent);
     }
 }
